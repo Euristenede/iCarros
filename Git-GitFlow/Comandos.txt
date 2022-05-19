@@ -1,0 +1,8 @@
+
+reflog -> retorna as versões do projeto;
+git reset --hard -> Volta um versão;
+git branch -> verifica em qual branch está;
+git checkout -b 'nome da branch' -> esse comando cria uma nova branch;
+git branch layout -> cria uma branch layout;
+git push -> cria a banch no github;
+git branch -> mostra qual branch está ativa;
