@@ -17,15 +17,24 @@ public class ProcessaTabuada {
      */
     public static void main(String[] args) {
         int numero;
-        
+
         Scanner input = new Scanner(System.in);
-        
-        System.out.println("Entre com um número: ");
-        numero = input.nextInt();
-        System.out.println("A tabuada desse número é: ");
-        for(int j = 1; j < 11; j++){
-            System.out.println(numero+" x "+j+" = "+j*numero);
+
+        while (true) {
+            System.out.println("Entre com um número: ");
+            numero = input.nextInt();
+
+            if (numero < 1 || numero > 9) {
+                System.out.println("Digite um número entre 0 e 9.");
+            } else {
+                System.out.println("A tabuada desse número é: ");
+                for (int j = 1; j < 11; j++) {
+                    System.out.println(numero + " x " + j + " = " + j * numero);
+                }
+                break;
+            }
         }
+
     }
-    
+
 }
